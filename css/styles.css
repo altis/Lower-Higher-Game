@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.buttonHigher {
+    cursor: pointer;
+}
+.buttonLower {
+    cursor: pointer;
+}
+.tryAgainButton {
+    cursor: pointer;
+}
+.startAgainButton {
+    cursor: pointer;
+}
+.overlayContainer {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+}
+#smallOverlayContainer {
+    display:none;
+}
+.smallOverlayContainer {
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    height: 50vh;
+    width: 100vw;
+    z-index: 100;
+    
+  
+}
+.overlay {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 90vh;
+    width: 70vw;
+    background-color: #181818;
+    opacity: 0.9;
+    z-index: 150; 
+}
+
+.background {
+    
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: auto;
+    
+}
+.mainBody {    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #181818;
+
+}
+
+.allCards{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width:70vw;
+    z-index: 10;
+}
+
+.cards{
+    width:8vw;
+    height:24vh;
+}
+
+.buttons{
+    
+    display: flex;
+    flex-direction: row;
+    width:70vw;
+    z-index: 50;
+    height:34vh;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  
+}
+
+.buttonHigher:active {
+    transform: translateY(4px);
+  }
+  .buttonLower:active {
+    transform: translateY(4px);
+  }
+
+
+
+.buttonHigher{
+    display:flex;
+    height:15vh;
+    width: 46vh;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonLower{
+    display:flex;
+    height:15vh;
+    width: 46vh;
+    z-index: 11;
+    align-items: center;
+    justify-content: center;
+    
+}
+.goldPlate  {
+    position: relative;
+    height:15vh;
+    width: 46vh;
+}
+
+.space {
+    display:flex;
+    height: 30%;
+    width: 100vw;
+}
+.textMiddle {
+    z-index: 9;
+    position: absolute;
+    height: 6vh;
+}
+
+.or{
+    height: 15vh;
+    display:flex;
+    align-items: center;
+}
+.completed {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width:100%;
+    z-index: 200;
+
+}
+.fail {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:100%;
+    width: 100%;
+    align-items: center;
+    z-index: 200;
+    
+}
+.nice {
+    display: none;
+    justify-content: center;
+    z-index: 200;
+    position: absolute;
+    height: 30vh;
+    width: 60vw;
+}
+.loser {
+    display: flex;
+    z-index: 200;
+    height: 20vh;
+    width: 40vw;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.winner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 200;
+    height: 20vh;
+    width: 50vw;
+}
+.betterLuckNextTime {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 200;
+    height: 5vh;
+    width: 50vw;
+    flex-direction: column;
+    margin-top: 5vh;
+    
+}
+.startAgain {
+    display: flex;
+    justify-content: center;
+    z-index: 200;
+    height:10vh;
+    width:40vw;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.startAgainButton {
+    display:flex;
+    justify-content: center;
+    z-index: 200;
+    background-color: #1e824c;
+    opacity: 100%;
+    box-sizing: content-box;
+    padding:1vw;
+    border-radius: 12px;
+}
+.tryAgain {
+    display: flex;
+    justify-content: center;
+    z-index: 200;
+    height: 6vh;
+   
+}
+.tryAgainButton{
+    display: flex;
+    justify-content: center;
+    z-index: 200;
+    margin-top: 10vh;
+    background-color: #1e824c;
+    opacity:100%;
+    box-sizing: content-box;
+    padding:1vw;
+    border-radius: 12px;
+}
+
+.tryAgainButton:active {
+    transform: translateY(4px);
+}
+.startAgainButton:active {
+    transform: translateY(4px);
+}
+.tryAgainButton:hover {
+    background-color: #0a6138;
+  }
+  .startAgainButton:hover {
+    background-color: #0a6138;
+  }
+
+
+.secretToLife {
+    display: flex;
+    justify-content:center;
+    z-index: 200;
+    height: 20vh;
+    width: 50vw;
+    margin-top: 5vh;
+    margin-bottom:5vh;
+}
+
+.textSmallOverlay {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    height:40vh;
+    width: 100%;
+    align-items: center;
+    z-index: 200;
+}
+.underlay {
+    display:none;
+    background-color: #181818;
+    opacity: 0.3;
+    z-index: 200;
+    height: 18vh;
+    width: 45vw;
+    border-radius: 40px;
+}
+.great {
+    display:none;
+    position:absolute;
+    z-index: 210;
+    height: 14vh;
+    width: 35vw;
+}
+.nice {
+    display:none;
+    position:absolute;
+    z-index: 210;
+    height: 14vh;
+    width: 30vw;
+}

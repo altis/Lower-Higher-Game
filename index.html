@@ -2,17 +2,92 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Add title here</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Higher or Lower</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+        <div id="smallOverlayContainer" class="smallOverlayContainer">
+
+                <div class="textSmallOverlay" id="textSmallOverlay">
+                    <div class="underlay" id="underlay"></div>
+                    <img class="nice" id="nice" src="images/layout/ARA_0007_nice.png">
+                    <img class="great" id="great" src="images/layout/ARA_0006_great.png">
+                </div>
+            </div>
+    
+    <div class="mainBody">
+
+        <div id="overlayContainer" class="overlayContainer">
+            <div class="overlay" id = "overlay"></div>
+            <div class="textOverlay" id="textOverlay">
+
+                <div id="completed" class="completed">
+                    <img class="winner" src="images/layout/ARA_0004_winner.png">
+                    <img class="secretToLife" src="images/layout/ARA_0000_hereIsTheSecretToLife.png">
+
+                    <div id="restart" class="startAgainButton"><img class="startAgain" src="images/layout/ARA_0002_startAgain.png">
+                    </div>
+                </div>
+
+                <div id="fail" class="fail">
+                    <img  class="loser" src="images/layout/ARA_0005_loser.png">
+                    <img class="betterLuckNextTime" src="images/layout/ARA_0001_betterLuckNextTime.png">
+                    <div id="tryAgainButton" class="tryAgainButton"><img class="tryAgain" src="images/layout/ARA_0003_tryAgain.png"></div>
+                </div>
+            </div>
+
+        </div>
+
        
-        <script src="js/main.js" async defer></script>
-    </body>
+        <img class="background" src="images/layout/ARA_0013_background.png">
+        <div class="space"></div>
+        <div class="allCards">
+
+            <img id="img0" class="cards" src="images/cards/blueBack.png">
+            <img id="img1" class="cards" src="images/cards/blueBack.png">
+            <img id="img2" class="cards" src="images/cards/blueBack.png">
+            <img id="img3" class="cards" src="images/cards/blueBack.png">
+            <img id="img4" class="cards" src="images/cards/blueBack.png">
+            <img id="img5" class="cards" src="images/cards/blueBack.png">
+            <img id="img6" class="cards" src="images/cards/blueBack.png">
+
+
+        </div>
+
+        <div class="buttons">
+            <div class="buttonHigher" id="higherbutton">
+                <img class="goldPlate" src="images/layout/ARA_0012_goldPlateLeft.png" alt="">
+                <img class="textMiddle" src="images/layout/ARA_0010_higher.png">
+            </div>
+
+            <div class="or">
+                <img src="images/layout/ARA_0008_or.png">
+            </div>
+
+            <div class="buttonLower" id="lowerbutton">
+                <img class="goldPlate" src="images/layout/ARA_0011_goldPlateRight.png" alt="">
+                <img class="textMiddle" src="images/layout/ARA_0009_lower.png">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="">
+
+
+    </div>
+
+    <script src="js/main.js" async defer></script>
+</body>
+
 </html>
